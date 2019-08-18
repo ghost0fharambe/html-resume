@@ -5,18 +5,29 @@
 	<meta charset="UTF-8">
 	<title>Adam Karman</title>
 	<style>
+		/* dd {
+			padding-bottom: 10px;
+		} */
 
 		table,
-		th,
-		td {
+		th {
 			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		td {
+			/* border: 1px solid black; */
 			border-collapse: collapse;
 		}
 
 		th,
 		td {
 			padding: 5px;
-			text-align: left;
+			text-align: center;
+		}
+
+		#projects-container {
+			text-align: center;
 		}
 
 		#skills-container h3 {
@@ -63,16 +74,18 @@
 		</div>
 		<div id="summary-container">
 			<h3>Summary</h3>
-			<p>Highly motivated Full Stack Web Developer with a passion for technology and software engineering. Fully
+			<p style="margin: auto; width: 75%;">Highly motivated Full Stack Web Developer with a passion for technology
+				and software engineering. Fully
 				certified
 				from the University of Arizona Full Stack Web Development Boot Camp; skilled at problem solving, fixing
 				errors,
 				and designing creative solutions to complex problems. Personable, places strong emphasis on inter-group
 				communication to efficiently and promptly complete the objective.</p>
 		</div>
+		<hr />
 		<div id="skills-container">
 			<h3>Technical Skills</h3>
-			<table style="width:100%">
+			<table style="width:50%; margin: auto;">
 				<tr>
 					<th>Technologies:</th>
 					<td>Git</td>
@@ -91,33 +104,84 @@
 					<td>MySQL Workbench</td>
 					<td>Robo 3T</td>
 					<td>Postman</td>
+					<td></td>
 				</tr>
 				<tr>
 					<th>Languages:</th>
 					<td>Javascript</td>
 					<td>HTML</td>
 					<td>CSS</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<th>Databases:</th>
 					<td>MySQL</td>
 					<td>MongoDB</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<th>Libraries:</th>
 					<td>jQuery</td>
 					<td>Bootstrap</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 				<tr>
 					<th>Frameworks:</th>
 					<td>Express.js</td>
 					<td>React.js</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
 				</tr>
 			</table>
 		</div>
+		<hr />
 		<div id="projects-container">
 			<h3>Projects</h3>
-			
+			<dl>
+				<dt style="font-weight: bold">Giftastic | <a
+						href="https://github.com/ghost0fharambe/ajax-giftastic">https://github.com/ghost0fharambe/ajax-giftastic</a>
+				</dt>
+				<dd>A front-end application that pulls GIFS from the Giphy API, renders them onto the web page.
+					Creates a button for every search</dd>
+				<dd style="padding-bottom: 15px;"><span style="font-weight: bold">Tools Used: </span>HTML, JavaScript,
+					jQuery, AJAX, Giphy API</dd>
+
+				<dt style="font-weight: bold">React Memory Game | <a
+						href="https://github.com/ghost0fharambe/react-memory-game-redux">https://github.com/ghost0fharambe/react-memory-game-redux</a>
+				</dt>
+				<dd>A full stack game built with React.js; Pictures are rendered, user must click them all once,
+					pictures shuffle every click.</dd>
+				<dd style="padding-bottom: 15px;"><span style="font-weight: bold">Tools Used: </span>HTML, CSS,
+					JavaScript, React.js, JSX, Node.js
+				</dd>
+
+				<dt style="font-weight: bold">TrafficMon | <a
+						href="https://www.trafficmon.org">https://www.trafficmon.org</a>
+				</dt>
+				<dd>A full stack game built with React.js; Pictures are rendered, user must click them all once,
+					pictures shuffle every click.</dd>
+				<dd><span style="font-weight: bold">Developer Role: </span>API Development, Server Setup, Database
+					Architecture, Front End Components
+				</dd>
+				<dd style="padding-bottom: 15px;"><span style="font-weight: bold">Tools Used: </span>HTML, CSS,
+					JavaScript, React.js, JSX, Node.js,
+					Express.js, MySQL, Sequelize, Passport
+				</dd>
+			</dl>
 		</div>
 	</div>
 </body>
